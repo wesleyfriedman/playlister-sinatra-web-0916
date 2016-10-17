@@ -7,11 +7,12 @@ describe "Artist" do
     blank_space =  Song.create(:name => "Blank Space", :artist => @artist) 
 
     pop = Genre.create(:name => "Pop")
-
+    # binding.pry
     blank_space.genre_ids = pop.id
     
   end
   it "can be initialized" do
+    # binding.pry
     expect(@artist).to be_an_instance_of(Artist)
   end
 
